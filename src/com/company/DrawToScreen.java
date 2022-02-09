@@ -19,8 +19,40 @@ public class DrawToScreen extends JPanel{
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+
+
+        for (int i = 0; i < 800; i+=160) {
+            for (int j = 0; j < 800; j+=160) {
+                //face
+                g.setColor(Color.YELLOW);
+                g.fillOval(5+j, 5+i, 100, 100);
+
+                //eyes
+                g.setColor(Color.BLUE);
+                g.fillRect(30+j, 30+i, 10, 10);
+                g.fillRect(70+j, 30+i, 10, 10);
+
+                //cheeks
+                g.setColor(Color.PINK);
+                g.fillOval(25+j, 45+i, 20, 10);
+                g.fillOval(65+j, 45+i, 20, 10);
+
+                //nose
+                g.setColor(Color.ORANGE);
+                g.fillOval(40+j, 60+i, 30, 15);
+
+                //mouth
+                g.setColor(Color.BLACK);
+                g.drawArc(30+j, 70+i, 60, 20, -140, 90);
+
+                //outline for face
+                g.drawOval(5+j, 5+i, 100, 100);
+
+            }
+        }
+
         //Your code here: feel free to remove what is below        
-        g.setColor(Color.BLACK);
+        /*g.setColor(Color.BLACK);
         g.fillRect(0, 0, BOX_WIDTH, BOX_HEIGHT);
 
         g.setColor(Color.GREEN);
@@ -33,7 +65,7 @@ public class DrawToScreen extends JPanel{
         g.drawRoundRect(300, 200, 100, 200, 50, 100);
 
         g.setColor(Color.ORANGE);
-        g.drawArc(200, 100, 200, 300, 90, 140);
+        g.drawArc(200, 100, 200, 300, 90, 140);*/
     }
 
     public static void main(String args[]){
