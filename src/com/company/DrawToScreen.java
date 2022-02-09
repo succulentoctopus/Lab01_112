@@ -51,21 +51,6 @@ public class DrawToScreen extends JPanel{
             }
         }
 
-        //Your code here: feel free to remove what is below        
-        /*g.setColor(Color.BLACK);
-        g.fillRect(0, 0, BOX_WIDTH, BOX_HEIGHT);
-
-        g.setColor(Color.GREEN);
-        g.fillOval(50, 50, 30, 20);
-
-        g.setColor(Color.RED);
-        g.fillRect(100, 100, 20, 30);
-
-        g.setColor(Color.BLUE);
-        g.drawRoundRect(300, 200, 100, 200, 50, 100);
-
-        g.setColor(Color.ORANGE);
-        g.drawArc(200, 100, 200, 300, 90, 140);*/
     }
 
     public static void main(String args[]){
